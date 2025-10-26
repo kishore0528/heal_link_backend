@@ -3,6 +3,7 @@ config/config.env
 npm-debug.log*
 *.log
 
+
 # Ignore backend test scripts and unwanted files
 test*.js
 *test*.js
