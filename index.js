@@ -26,12 +26,11 @@ app.use((req, res, next) => {
 console.log("FRONTEND_ORIGIN from env:", process.env.FRONTEND_ORIGIN);
 app.use(
   cors({
-    origin: [process.env.FRONTEND_ORIGIN].filter(
-      Boolean
-    ),
+    origin: "*",
     credentials: true,
   })
 );
+
 
 // Serve static files from uploads directory with absolute path
 const uploadsPath = path.join(__dirname, 'uploads');
